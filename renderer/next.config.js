@@ -4,6 +4,7 @@ module.exports = withCSS({
   webpack: config => {
     config.target = "electron-renderer";
     config.externals = config.externals || [{ sqlite3: "commonjs sqlite3" }];
+
     config.module.rules = [
       ...(config.module.rules || []),
       {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import { Theme, makeStyles, createStyles } from "@material-ui/core/styles";
+import { makeStyles, createStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -10,7 +10,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "../components";
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(theme =>
   createStyles({
     root: {
       textAlign: "center",
@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Home - Nextron (with-typescript-material-ui)</title>
+        <title>Home - Nextron (with-javascript-material-ui)</title>
       </Head>
 
       <div className={classes.root}>

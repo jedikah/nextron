@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from '../components';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       textAlign: 'center',
@@ -20,7 +20,7 @@ const Next = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Next - Nextron (with-typescript-material-ui)</title>
+        <title>Next - Nextron (with-javascript-material-ui)</title>
       </Head>
 
       <div className={classes.root}>
